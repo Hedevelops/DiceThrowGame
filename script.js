@@ -23,7 +23,7 @@ function r1(){
 
 var randomPng = "images/" + "dice" + randomNumber1 + ".png";
 
-var image1 = document.querySelectorAll("img")[2];    /*  document.querySelectorAll("img")[0]; didn't worked, why?? */
+var image1 = document.querySelectorAll(".img1");    /*  document.querySelectorAll("img")[0]; didn't worked on github, why?? */
 
 image1.setAttribute("src", randomPng);
 
