@@ -6,6 +6,7 @@ var p2=prompt("enter player2 name:")
 var randomNumber1 , randomNumber2 ;
 
 function call(){
+    r1();
     r2();
     setTimeout(r3, 1000);
 }
@@ -23,7 +24,7 @@ function r1(){
 
 var randomPng = "images/" + "dice" + randomNumber1 + ".png";
 
-var image1 = document.querySelector(".img1");    /*  document.querySelectorAll("img")[0]; didn't worked on github??*/
+var image1 = document.querySelectorAll(".img1")[0];    /*  document.querySelectorAll needs index value*/
 
 image1.setAttribute("src", randomPng);
 
