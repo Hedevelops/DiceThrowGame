@@ -5,11 +5,11 @@ var p2=prompt("enter player2 name:")
 
 var randomNumber1 , randomNumber2 ;
 
-function call(){
-    r1();
-    r2();
-    setTimeout(r3, 1000);
-}
+// function call(){
+//     r1();
+//     r2();
+//     setTimeout(r3, 1000);
+// }
 
 
 
@@ -33,21 +33,6 @@ image1.setAttribute("src", randomPng);
 }
 
 
-function r2(){
-    document.querySelector(".img2").style.transform=" scale(1.2) rotate(720deg)";
-    document.querySelector(".img2").style.transition="ease-in-out 1s";
-    
-
-randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
-var randomPng2 = "images/" + "dice" + randomNumber2 + ".png";
-
-var image2 = document.querySelector(".img2");
-
-image2.setAttribute("src", randomPng2);
-
-}
-
  
 function r3() {
     console.log(randomNumber1);
@@ -67,6 +52,22 @@ else{
 
 }
 
+
+function r2(){
+    document.querySelector(".img2").style.transform=" scale(1.2) rotate(720deg)";
+    document.querySelector(".img2").style.transition="ease-in-out 1s";
+    
+
+randomNumber2 = Math.floor(Math.random() * 6) + 1;
+
+var randomPng2 = "images/" + "dice" + randomNumber2 + ".png";
+
+var image2 = document.querySelector(".img2");
+
+image2.setAttribute("src", randomPng2);
+
+setTimeout(r3, 1000);
+}
 
 
 
